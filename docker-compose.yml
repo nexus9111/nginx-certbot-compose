@@ -18,6 +18,8 @@ services:
       - /srv/nginx/logs/:/logs/
     networks:
       - nginx
+    env_file:
+      - .env
 
 networks:
   nginx:
